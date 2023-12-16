@@ -120,7 +120,7 @@ ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 
 ## `▢ COLABORADORES DEL BOT` 
 
-<a href="https://github.com/DavidOficial"><img src="https://github.com/DavidOfcial.png" width="100" height="100" alt="DavidOficial"/> </a>
+<a href="https://github.com/DavidOficial"><img src="https://github.com/DavidOficial.png" width="100" height="100" alt="DavidOficial"/> </a>
 
 ## `▢ EDITOR & PROPIETARIO DEL BOT` 
 <a href="https://github.com/The-DiosBot-MD"><img src="https://github.com/The-DiosBot-MD.png" width="250" height="250" alt="The-DiosBot-MD"/></a>
