@@ -1,7 +1,7 @@
 {
-  "name": "TheMiku-Bot-MD",
+  "name": "TheMiku-Bot-MDV2",
   "version": "1.0.0",
-  "description": "Adrian Oficial - The-MikuBot-MD",
+  "description": "Adrian Oficial - The-MikuBot-MDV2",
   "main": "index.js",
   "type": "module",
   "directories": {
@@ -16,16 +16,16 @@
     "eslint": "eslint .",
     "eslintfix": "eslint --fix ."
   },
-  "homepage": "https://github.com/The-DiosBot-MD/TheMiku-Bot-MD",
+  "homepage": "https://github.com/The-DiosBot-MD/TheMiku-Bot-MDV2",
   "author": {
     "name": "The-DiosBot-MD"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/The-DiosBot-MD/TheMiku-Bot-MD.git"
+    "url": "git+https://github.com/The-DiosBot-MD/TheMiku-Bot-MDV2.git"
   },
   "bugs": {
-    "url": "https://github.com/The-DiosBot-MD/TheMiku-Bot-MD/issues"
+    "url": "https://github.com/The-DiosBot-MD/TheMiku-Bot-MDV2/issues"
   },
   "license": "GPL-3.0-or-later",
   "dependencies": {

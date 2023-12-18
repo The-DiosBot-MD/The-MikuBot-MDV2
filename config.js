@@ -47,11 +47,11 @@ global.mes = d.toLocaleDateString('es', {month: 'long'});
 global.año = d.toLocaleDateString('es', {year: 'numeric'});
 global.tiempo = d.toLocaleString('en-US', {hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true});
 //* ****************************
-global.wm2 = `${dia} ${fecha}\nThe Mystic - Bot`;
+global.wm2 = `${dia} ${fecha}\nThe-MikuBot-MDV2`;
 global.gt = '𝐓𝐡𝐞-𝐌𝐢𝐤𝐮𝐁𝐨𝐭-𝐌𝐃';
 global.mysticbot = '𝐓𝐡𝐞-𝐌𝐢𝐤𝐮𝐁𝐨𝐭-𝐌𝐃';
-global.md = 'https://github.com/The-DiosBot-MD/The-MikuBot-MD';
-global.mysticbot = 'https://github.com/The-DiosBot-MD/The-MikuBot-MD';
+global.md = 'https://github.com/The-DiosBot-MD/The-MikuBot-MDV2';
+global.mysticbot = 'https://github.com/The-DiosBot-MD/The-MikuBot-MDV2';
 global.waitt = '*[ ⏳ ] Cargando...*';
 global.waittt = '*[ ⏳ ] Cargando...*';
 global.waitttt = '*[ ⏳ ] Cargando...*';

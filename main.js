@@ -1,4 +1,4 @@
-//The-DiosBot-MD - By Adrian Oficial 
+//The-DiosBot-MDV2 - By Adrian Oficial 
 process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = '1';
 import './config.js';
 import './api.js';

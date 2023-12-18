@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: themiku-bot-md
+    name: the-mikubot-mdv2
     env: docker
     region: Frankfurt
     plan: free
