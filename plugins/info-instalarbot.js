@@ -1,46 +1,13 @@
 const handler = async (m, {conn, usedPrefix}) => {
   const doc = ['pdf', 'zip', 'vnd.openxmlformats-officedocument.presentationml.presentation', 'vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'vnd.openxmlformats-officedocument.wordprocessingml.document'];
   const document = doc[Math.floor(Math.random() * doc.length)];
-  const text = `*—◉ 𝚃𝚄𝚃𝙾𝚁𝙸𝙰𝙻 𝙱𝙾𝚇𝙼𝙸𝙽𝙴 𝙷𝙾𝚂𝚃*
-> Tutorial: https://youtu.be/eC9TfKICpcY
-> Pagina Oficial: https://boxmineworld.com
-> Dashboard: https://dash.boxmineworld.com/home
-> Panel: https://panel.boxmineworld.com
-> Soporte: https://discord.gg/84qsr4v 
+  const text = `*𝙷𝙾𝙻𝙰 𝙰𝚀𝚄𝙸 𝚃𝙴 𝙳𝙴𝙹𝙾 𝙴𝙻 𝚁𝙴𝙿𝙾𝚂𝙸𝚃𝙾𝚁𝙸𝙾 𝙳𝙴𝙻 𝙱𝙾𝚃 𝙿𝙰𝚁𝙰 𝚀𝚄𝙴 𝙿𝚄𝙴𝙳𝙰𝚂 𝙸𝙽𝚂𝚃𝙰𝙻𝙰𝚁 𝙴𝚂𝚃𝙴 𝙱𝙾𝚃 𝚈 𝙻𝙾 𝙿𝚄𝙴𝙳𝙰𝚂 𝙰𝙿𝙾𝚈𝙰 :𝚅*
 
-------------------------------------
-—◉ 𝚃𝚄𝚃𝙾𝚁𝙸𝙰𝙻-𝚃𝙴𝚁𝙼𝚄𝚇
-> https://youtu.be/yRS4m36Zwkw
+*➤ 𝚁𝚎𝚙𝚘𝚜𝚒𝚝𝚘𝚛𝚒𝚘 𝚘𝚏𝚒𝚌𝚒𝚊𝚕 𝚍𝚎𝚕 𝙱𝚘𝚝:*
 
-------------------------------------
-
-*—◉ 𝙲𝙾𝙼𝙰𝙽𝙳𝙾𝚂 𝚃𝙴𝚁𝙼𝚄𝚇*
-> Comandos:
-- cd && termux-setup-storage
-- apt-get update -y && apt-get upgrade -y
-- pkg install -y git nodejs ffmpeg imagemagick && pkg install yarn 
-- git clone https://github.com/BrunoSobrino/TheMystic-Bot-MD.git && cd TheMystic-Bot-MD
-- yarn install
-- npm install
-- npm update
-- npm start
-
-------------------------------------
-
-—◉ ✔️ ACTIVAR EN CASO DE DETENERSE EN TERMUX ✔️
-ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
-> cd TheMystic-Bot-MD
-> npm start
-
-------------------------------------
-
-—◉ 👽 OBTENER OTRO CODIGO QR EN TERMUX 👽
-ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
-> cd TheMystic-Bot-MD
-> rm -rf MysticSession
-> npm start`.trim();
+https://github.com/The-DiosBot-MD/The-MikuBot-MDV2`.trim();
   const buttonMessage= {
-    'document': {url: `https://github.com/BrunoSobrino/TheMystic-Bot-MD`},
+    'document': {url: `https://github.com/The-DiosBot-MD/The-MikuBot-MDV2`},
     'mimetype': `application/${document}`,
     'fileName': `「  𝑯𝒆𝒍𝒍𝒐 𝑾𝒐𝒓𝒍𝒅 」`,
     'fileLength': 99999999999999,
@@ -49,18 +16,15 @@ ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
       'forwardingScore': 200,
       'isForwarded': true,
       'externalAdReply': {
-        'mediaUrl': 'https://github.com/BrunoSobrino/TheMystic-Bot-MD',
+        'mediaUrl': 'https://github.com/The-DiosBot-MD/The-MikuBot-MDV2',
         'mediaType': 2,
         'previewType': 'pdf',
         'title': 'ᴇʟ ᴍᴇᴊᴏʀ ʙᴏᴛ ᴅᴇ ᴡʜᴀᴛsᴀᴘᴘ⁩',
         'body': wm,
         'thumbnail': imagen1,
-        'sourceUrl': 'https://www.youtube.com/channel/UCSTDMKjbm-EmEovkygX-lCA'}},
+        'sourceUrl': 'https://www.youtube.com/channel/@AdrianOficial905'}},
     'caption': text,
     'footer': wm,
-    // 'buttons':[
-    // {buttonId: `${usedPrefix}menu`, buttonText: {displayText: '𝙼𝙴𝙽𝚄'}, type: 1},
-    // {buttonId: `${usedPrefix}donar`, buttonText: {displayText: '𝙳𝙾𝙽𝙰𝚁'}, type: 1}],
     'headerType': 6};
   conn.sendMessage(m.chat, buttonMessage, {quoted: m});
 };

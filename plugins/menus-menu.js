@@ -21,19 +21,19 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
     const taguser = '@' + m.sender.split('@s.whatsapp.net')[0];
     const doc = ['pdf', 'zip', 'vnd.openxmlformats-officedocument.presentationml.presentation', 'vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'vnd.openxmlformats-officedocument.wordprocessingml.document'];
     const document = doc[Math.floor(Math.random() * doc.length)];
-    const str = `𝙏𝙃𝙀 𝙈𝙔𝙎𝙏𝙄𝘾 - 𝘽𝙊𝙏
+    const str = `𝑻𝒉𝒆-𝑴𝒊𝒌𝒖𝑩𝒐𝒕-𝑴𝑫
 
- ▢ *Hola,* ${taguser}
+ ▢ *𝑯𝒐𝒍𝒂, 𝒒𝒖𝒆 𝒕𝒂𝒍* ${taguser}
 
- _*< TUS ESTADÍSTICAS />*_
+ _*< 𝑰𝒏𝒇𝒐 𝒅𝒆𝒍 𝒖𝒔𝒖𝒂𝒓𝒊𝒐 />*_
 
- ▢ *Nivel:* ${level}
- ▢ *Experiencia:* ${exp}
- ▢ *Rango:* ${role}
- ▢ *Diamantes:* ${limit}
- ▢ *MysticCoins:* ${money}
- ▢ *Tokens:* ${joincount}
- ▢ *Premium:* ${user.premiumTime > 0 ? '✅' : (isPrems ? '✅' : '❌') || ''}
+ ▢ *𝑵𝒊𝒗𝒆𝒍:* ${level}
+ ▢ *𝑬𝒙𝒑𝒆𝒓𝒊𝒆𝒏𝒄𝒊𝒂:* ${exp}
+ ▢ *𝑹𝒂𝒏𝒈𝒐:* ${role}
+ ▢ *𝑫𝒊𝒂𝒎𝒂𝒏𝒕𝒆𝒔:* ${limit}
+ ▢ *𝑪𝒐𝒊𝒏𝒔:* ${money}
+ ▢ *𝑻𝒐𝒌𝒆𝒏𝒔:* ${joincount}
+ ▢ *𝑷𝒓𝒆𝒎𝒊𝒖𝒏:* ${user.premiumTime > 0 ? '✅' : (isPrems ? '✅' : '❌') || ''}
  ${readMore}
 
   _*< LISTA DE MENUS />*_

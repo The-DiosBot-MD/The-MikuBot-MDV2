@@ -4,8 +4,8 @@ import axios from 'axios';
 let previousCommitSHA = '';
 let previousUpdatedAt = '';
 let previousCommitUser = ''; 
-const owner = 'BrunoSobrino';
-const repo = 'TheMystic-Bot-MD';
+const owner = 'The-DiosBot-MD';
+const repo = 'The-MikuBot-MDV2';
 const handler = async (m, {conn, text, usedPrefix, command}) => {
  conn.sendMessage(m.chat, {text: `*[❗] Comando activado con éxito, te notificaremos cuando haya algun cambio en el repositorio oficial.*`}, {quoted: m});  
 try {
@@ -30,6 +30,6 @@ try {
 m.reply(e)
 }
 };
-handler.command = /^(actualizacion|actualizaciones)/i;
+handler.command = /^(actualizacion|actualizaciones|update)/i;
 handler.rowner = true;
 export default handler;

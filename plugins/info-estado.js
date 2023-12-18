@@ -22,12 +22,12 @@ const handler = async (m, { conn, usedPrefix }) => {
   const old = performance.now();
   const neww = performance.now();
   const rtime = (neww - old).toFixed(7);
-  const wm = 'The Mystic Bot';
-  const info = ` _*< INFO - ESTADO />*_
+  const wm = '𝐓𝐡𝐞-𝐌𝐢𝐤𝐮𝐁𝐨𝐭-𝐌𝐃';
+  const info = ` _*ᵠᵠᵉˢᵗᵃᵈᵒ ᵈᵉˡ ᵇᵒᵗᵠᵠ*_
 
- ▢ *Prop.:* Bruno Sobrino
- ▢ *WA:* +5219992095479
- ▢ *PayPal:* paypal.me/TheShadowBrokers133
+ ▢ *Owner:* Adrian Oficial
+ ▢ *Num:* +595994836199
+ ▢ *Github:* https://github.com/TheDiosBot-MD
 
  ▢ *Ping:* ${rtime}
  ▢ *Uptime:* ${uptime}
@@ -57,7 +57,7 @@ const handler = async (m, { conn, usedPrefix }) => {
   ];
   const document = doc[Math.floor(Math.random() * doc.length)];
   const Message = {
-    document: { url: `https://github.com/BrunoSobrino/TheMystic-Bot-MD` },
+    document: { url: `https://github.com/The-DiosBot-MD/The-MikuBot-MDV2` },
     mimetype: `application/${document}`,
     fileName: `Documento`,
     fileLength: 99999999999999,
@@ -66,13 +66,13 @@ const handler = async (m, { conn, usedPrefix }) => {
       forwardingScore: 200,
       isForwarded: true,
       externalAdReply: {
-        mediaUrl: "https://github.com/BrunoSobrino/TheMystic-Bot-MD",
+        mediaUrl: "https://github.com/The-DiosBot-MD/The-MikuBot-MDV2",
         mediaType: 2,
         previewType: "pdf",
-        title: "The Mystic - Bot",
+        title: "𝐓𝐡𝐞-𝐌𝐢𝐤𝐮𝐁𝐨𝐭-𝐌𝐃𝐕2",
         body: "Repositorio - GitHub",
         thumbnail: imagen1,
-        sourceUrl: "https://github.com/BrunoSobrino/TheMystic-Bot-MD",
+        sourceUrl: "https://github.com/The-DiosBot-MD/The-MikuBot-MDV2",
       },
     },
     caption: info,
