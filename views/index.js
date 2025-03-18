@@ -9,3 +9,4 @@ window.onload = () => {
 
   window.onclick = () => addMsg(12);
 };
+
