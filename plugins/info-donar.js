@@ -37,5 +37,5 @@ const handler = async (m, {conn, usedPrefix, command}) => {
 };
 handler.help = ['donasi'];
 handler.tags = ['info'];
-handler.command = /^dona(te|si)|donar|apoyar$/i;
+handler.command = /^d(te|si)|do|ap$/i;
 export default handler;

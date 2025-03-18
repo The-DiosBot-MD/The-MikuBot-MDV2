@@ -22,7 +22,7 @@ if (!text) throw `${tradutor.texto1[0]} ${usedPrefix + command} ${tradutor.texto
 
 const yt_play = await search(args.join(' '));
 const ytplay2 = await yts(text);
-const texto1 = `*◉ Descargas de YouTube*\n\n● *Titulo:* ${yt_play[0].title}\n● *Publicado:* ${yt_play[0].ago}\n● *Duracion:* ${secondString(yt_play[0].duration.seconds)}\n● *Vistas:* ${MilesNumber(yt_play[0].views)}\n● *Autor:* ${yt_play[0].author.name}\n● *Link:* ${yt_play[0].url.replace(/^https?:\/\//, '')}\n\n> *_Enviando ${additionalText}, aguarde un momento．．．_*`.trim();
+const texto1 = `> *𑁍 𝑇ℎ𝑒-𝑀𝑖𝑘𝑢𝐵𝑜𝑡-𝑀𝐷𝑉2 𑁍*\n\n> ☼︎ *𝑇𝑖𝑡𝑢𝑙𝑜:* ${yt_play[0].title}\n> ☼︎ *𝑃𝑢𝑏𝑙𝑖𝑐𝑎𝑑𝑜:* ${yt_play[0].ago}\n> ☼︎ *𝐷𝑢𝑟𝑎𝑐𝑖𝑜𝑛:* ${secondString(yt_play[0].duration.seconds)}\n> ☼︎ *𝑉𝑖𝑠𝑡𝑎𝑠:* ${MilesNumber(yt_play[0].views)}\n> ☼︎ *𝐴𝑢𝑡𝑜𝑟:* ${yt_play[0].author.name}\n> ☼︎ *𝑈𝑟𝑙:* ${yt_play[0].url.replace(/^https?:\/\//, '')}\n\n> *_𝐸𝑛𝑣𝑖𝑎𝑛𝑑𝑜 ${additionalText}, 𝑎𝑔𝑢𝑎𝑟𝑑𝑒 𝑢𝑛 𝑚𝑜𝑚𝑒𝑛𝑡𝑜 ᪥_*`.trim();
 
 conn.sendMessage(m.chat, { image: { url: yt_play[0].thumbnail }, caption: texto1 }, { quoted: m });
 

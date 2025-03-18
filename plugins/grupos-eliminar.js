@@ -1,25 +1,19 @@
-
 const handler = async (m, {conn, participants, command, usedPrefix}) => {
-  const datas = global
-  const idioma = datas.db.data.users[m.sender].language || global.defaultLenguaje
-  const _translate = JSON.parse(fs.readFileSync(`./src/languages/${idioma}.json`))
-  const tradutor = _translate.plugins.grupos_eliminar
-
-  if (!global.db.data.settings[conn.user.jid].restrict) throw `${tradutor.texto1[0]} (*_restrict_*), ${tradutor.texto1[1]}`;
-  const kicktext = `${tradutor.texto2} _${usedPrefix + command} @${global.suittag}_`;
+  if (!global.db.data.settings[conn.user.jid].restrict) throw '_*< GRUPOS - ELIMINAR />*_\n\n*[ ℹ️ ] El propietario del bot ha activado la función de restricción (*_restrict_*), por lo que no se ejecutó el comando solicitado.*';
+  const kicktext = `_*< GRUPOS - ELIMINAR />*_\n\n*[ ℹ️ ] Etiqueta o responde a un mensaje del participante que deseas eliminar.*\n\n*[ 💡 ] Ejemplo:* _${usedPrefix + command} @${global.suittag}_`;
   if (!m.mentionedJid[0] && !m.quoted) return m.reply(kicktext, m.chat, {mentions: conn.parseMention(kicktext)});
-  if (m.message.extendedTextMessage === undefined || m.message.extendedTextMessage === null) return m.reply(tradutor.texto3);
+  if (m.message.extendedTextMessage === undefined || m.message.extendedTextMessage === null) return m.reply('_*< GRUPOS - ELIMINAR />*_\n\n*[ ℹ️ ] Etiqueta o responde a un mensaje del participante que deseas eliminar.');
   if (m.message.extendedTextMessage.contextInfo.participant !== null && m.message.extendedTextMessage.contextInfo.participant != undefined && m.message.extendedTextMessage.contextInfo.participant !== '') {
     const mentioned = m.message.extendedTextMessage.contextInfo.mentionedJid[0] ? m.message.extendedTextMessage.contextInfo.mentionedJid[0] : m.message.extendedTextMessage.contextInfo.participant;
-    if (conn.user.jid.includes(mentioned)) return m.reply(tradutor.texto4);
+    if (conn.user.jid.includes(mentioned)) return m.reply('_*< GRUPOS - ELIMINAR />*_\n\n*[ ℹ️ ] El bot no puede eliminarse a si mismo.*');
     const responseb = await conn.groupParticipantsUpdate(m.chat, [mentioned], 'remove');
-    const exitoso1 = `${tradutor.texto5[0]} @${mentioned.split('@')[0]} ${tradutor.texto5[1]}`;
-    const error1 = `${tradutor.texto6[0]} @${mentioned.split('@')[0]} ${tradutor.texto6[1]}`;
-    const error2 = `${tradutor.texto7[0]} @${mentioned.split('@')[0]} ${tradutor.texto7[1]}`;
+    const exitoso1 = `_*< GRUPOS - ELIMINAR />*_\n\n*[ ℹ️ ] El participante @${mentioned.split('@')[0]} fue eliminado.*`;
+    const error1 = `_*< GRUPOS - ELIMINAR />*_\n\n*[ ℹ️ ] @${mentioned.split('@')[0]} es el propietario del grupo, por lo mismo no puede ser eliminado.*`;
+    const error2 = `_*< GRUPOS - ELIMINAR />*_\n\n*[ ℹ️ ] @${mentioned.split('@')[0]} ya fue eliminado o salio del grupo.*`;
     if (responseb[0].status === '200') m.reply(exitoso1, m.chat, {mentions: conn.parseMention(exitoso1)});
     else if (responseb[0].status === '406') m.reply(error1, m.chat, {mentions: conn.parseMention(error1)});
     else if (responseb[0].status === '404') m.reply(error2, m.chat, {mentions: conn.parseMention(error2)});
-    else conn.sendMessage(m.chat, {text: `${tradutor.texto8}`, mentions: [m.sender], contextInfo: {forwardingScore: 999, isForwarded: true}}, {quoted: m});
+    else conn.sendMessage(m.chat, {text: `_*< GRUPOS - ELIMINAR />*_\n\n*[ ℹ️ ] Ocurrió un error. Por favor, inténtalo de nuevo más tarde.*`, mentions: [m.sender], contextInfo: {forwardingScore: 999, isForwarded: true}}, {quoted: m});
   } else if (m.message.extendedTextMessage.contextInfo.mentionedJid != null && m.message.extendedTextMessage.contextInfo.mentionedJid != undefined) {
     return;
   }
