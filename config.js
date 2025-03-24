@@ -18,6 +18,7 @@ global.defaultLenguaje = 'es';
 global.owner = [
   ['595976126756', '👑 Miku - AdrianOficial 👑', true],
   ['595994836199', '💫 Mystic - Collaborator 2 💫', true],
+  ['584245610338'],
   ['595994825505']
 ];
 
