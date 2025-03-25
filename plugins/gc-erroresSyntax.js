@@ -1,5 +1,3 @@
-// BrayanOFC >> https://github.com/BrayanOFC
-
 import fs from 'fs';
 import path from 'path';
 
@@ -37,8 +35,8 @@ var handler = async (m, { usedPrefix, command }) => {
     }
 };
 
-handler.command = ['errores'];
-handler.help = ['errores'];
+handler.command = ['detectarsyntax', 'revs'];
+handler.help = ['detectarsyntax'];
 handler.tags = ['tools'];
 handler.register = true;
 
