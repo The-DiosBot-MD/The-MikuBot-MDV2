@@ -20,6 +20,8 @@ global.owner = [
   ['595994836199', '💫 Miku - Collaborator 2 💫', true],
   ['584245610338', '💫 Miku - Collaborator 3 💫', true],
   ['5216633900512', '💫 Miku - Collaborator 4💫', true],
+  ['5493873655135', 'MDMX', true],
+  ['5493873655168', 'MDMX - BUSINESS', true],
   ['595994825505']
 ];
 
